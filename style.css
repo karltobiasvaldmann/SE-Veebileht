@@ -9,3 +9,56 @@ h1 {
     font-family: Arial, sans-serif;
     text-align: center;
 }
+h2 {
+    color: #24476b;
+    font-family: Arial, sans-serif;
+}
+p {
+    color: #333333;
+    font-size: 17px;
+    font-family: Georgia, serif;
+    text-align: justify;
+}
+img {
+    border: 3px solid darkblue;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px gray;
+    max-width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #999999;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+/* Kahe tulba paigutus */
+.sisu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.veerg {
+    padding: 10px;
+}
+
+/* Väiksematel ekraanidel üks tulp */
+@media (max-width: 700px) {
+    .sisu {
+        grid-template-columns: 1fr;
+    }
+}
